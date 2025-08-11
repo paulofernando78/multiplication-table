@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --padding: 10px;
+  --border: 1px solid lightgrey;
+  --border-radius: 5px;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Walter Turncoat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 50px 0;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 123px);
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  padding: var(--padding);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+input {
+  width: 30px;
+  font-family: "Walter Turncoat";
+  font-size: 1rem;
+  padding-left: 3px;
+  margin-bottom: 2px;
+}
+
+.row-wrapper {
+  display: grid;
+  grid-template-columns: 50px 20px 30px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+
+
+
+
