@@ -1,0 +1,45 @@
+.header {
+  height: 60px;
+}
+
+.container-presentation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-name {
+  width: 300px;
+  margin: 10px 0 70px 0;
+  filter: drop-shadow(2px 2px 2px gray);
+}
+
+.greetings {
+  height: 34px;
+}
+
+.avatar {
+  width: 230px;
+  height: 230px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 5px gray);
+}
+
+svg {
+  min-width: 24px;
+}
+
+.icon-alighment {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.whatsapp-icon {
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+
+.contact-container {
+  margin-bottom: 20px;
+}

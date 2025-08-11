@@ -1,3 +1,5 @@
+@import "/src/css/imports.css";
+
 * {
   padding: 0;
   margin: 0;
@@ -45,12 +47,29 @@ input {
 
 .row-wrapper {
   display: grid;
-  grid-template-columns: 50px 20px 30px;
+  grid-template-columns: 55px 20px 30px;
 }
 
 .buttonWrapper {
   display: flex;
+  justify-content: center;
   gap: 8px;
+  margin-top: 30px;
+  
+}
+
+button {
+  padding: 5px;
+}
+
+.correct-answer {
+  border-radius: var(--border-radius);
+  border: 2px solid var(--green-6);
+}
+
+.incorrect-answer {
+  border-radius: var(--border-radius);
+  border: 2px solid var(--red-4);
 }
 
 

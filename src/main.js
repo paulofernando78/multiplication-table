@@ -1,414 +1,26 @@
-const multiplication = [
-  {
-    container: [
-      {
-        multiply: "2 x 1",
-        answer: "",
-      },
-      {
-        multiply: "2 x 2",
-        answer: "",
-      },
-      {
-        multiply: "2 x 3",
-        answer: "",
-      },
-      {
-        multiply: "2 x 4",
-        answer: "",
-      },
-      {
-        multiply: "2 x 5",
-        answer: "",
-      },
-      {
-        multiply: "2 x 6",
-        answer: "",
-      },
-      {
-        multiply: "2 x 7",
-        answer: "",
-      },
-      {
-        multiply: "2 x 8",
-        answer: "",
-      },
-      {
-        multiply: "2 x 9",
-        answer: "",
-      },
-      {
-        multiply: "2 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "3 x 1",
-        answer: "",
-      },
-      {
-        multiply: "3 x 2",
-        answer: "",
-      },
-      {
-        multiply: "3 x 3",
-        answer: "",
-      },
-      {
-        multiply: "3 x 4",
-        answer: "",
-      },
-      {
-        multiply: "3 x 5",
-        answer: "",
-      },
-      {
-        multiply: "3 x 6",
-        answer: "",
-      },
-      {
-        multiply: "3 x 7",
-        answer: "",
-      },
-      {
-        multiply: "3 x 8",
-        answer: "",
-      },
-      {
-        multiply: "3 x 9",
-        answer: "",
-      },
-      {
-        multiply: "3 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "4 x 1",
-        answer: "",
-      },
-      {
-        multiply: "4 x 2",
-        answer: "",
-      },
-      {
-        multiply: "4 x 3",
-        answer: "",
-      },
-      {
-        multiply: "4 x 4",
-        answer: "",
-      },
-      {
-        multiply: "4 x 5",
-        answer: "",
-      },
-      {
-        multiply: "4 x 6",
-        answer: "",
-      },
-      {
-        multiply: "4 x 7",
-        answer: "",
-      },
-      {
-        multiply: "4 x 8",
-        answer: "",
-      },
-      {
-        multiply: "4 x 9",
-        answer: "",
-      },
-      {
-        multiply: "4 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "5 x 1",
-        answer: "",
-      },
-      {
-        multiply: "5 x 2",
-        answer: "",
-      },
-      {
-        multiply: "5 x 3",
-        answer: "",
-      },
-      {
-        multiply: "5 x 4",
-        answer: "",
-      },
-      {
-        multiply: "5 x 5",
-        answer: "",
-      },
-      {
-        multiply: "5 x 6",
-        answer: "",
-      },
-      {
-        multiply: "5 x 7",
-        answer: "",
-      },
-      {
-        multiply: "5 x 8",
-        answer: "",
-      },
-      {
-        multiply: "5 x 9",
-        answer: "",
-      },
-      {
-        multiply: "5 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "6 x 1",
-        answer: "",
-      },
-      {
-        multiply: "6 x 2",
-        answer: "",
-      },
-      {
-        multiply: "6 x 3",
-        answer: "",
-      },
-      {
-        multiply: "6 x 4",
-        answer: "",
-      },
-      {
-        multiply: "6 x 5",
-        answer: "",
-      },
-      {
-        multiply: "6 x 6",
-        answer: "",
-      },
-      {
-        multiply: "6 x 7",
-        answer: "",
-      },
-      {
-        multiply: "6 x 8",
-        answer: "",
-      },
-      {
-        multiply: "6 x 9",
-        answer: "",
-      },
-      {
-        multiply: "6 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "7 x 1",
-        answer: "",
-      },
-      {
-        multiply: "7 x 2",
-        answer: "",
-      },
-      {
-        multiply: "7 x 3",
-        answer: "",
-      },
-      {
-        multiply: "7 x 4",
-        answer: "",
-      },
-      {
-        multiply: "7 x 5",
-        answer: "",
-      },
-      {
-        multiply: "7 x 6",
-        answer: "",
-      },
-      {
-        multiply: "7 x 7",
-        answer: "",
-      },
-      {
-        multiply: "7 x 8",
-        answer: "",
-      },
-      {
-        multiply: "7 x 9",
-        answer: "",
-      },
-      {
-        multiply: "7 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "8 x 1",
-        answer: "",
-      },
-      {
-        multiply: "8 x 2",
-        answer: "",
-      },
-      {
-        multiply: "8 x 3",
-        answer: "",
-      },
-      {
-        multiply: "8 x 4",
-        answer: "",
-      },
-      {
-        multiply: "8 x 5",
-        answer: "",
-      },
-      {
-        multiply: "8 x 6",
-        answer: "",
-      },
-      {
-        multiply: "8 x 7",
-        answer: "",
-      },
-      {
-        multiply: "8 x 8",
-        answer: "",
-      },
-      {
-        multiply: "8 x 9",
-        answer: "",
-      },
-      {
-        multiply: "8 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "9 x 1",
-        answer: "",
-      },
-      {
-        multiply: "9 x 2",
-        answer: "",
-      },
-      {
-        multiply: "9 x 3",
-        answer: "",
-      },
-      {
-        multiply: "9 x 4",
-        answer: "",
-      },
-      {
-        multiply: "9 x 5",
-        answer: "",
-      },
-      {
-        multiply: "9 x 6",
-        answer: "",
-      },
-      {
-        multiply: "9 x 7",
-        answer: "",
-      },
-      {
-        multiply: "9 x 8",
-        answer: "",
-      },
-      {
-        multiply: "9 x 9",
-        answer: "",
-      },
-      {
-        multiply: "9 x 10",
-        answer: "",
-      },
-    ],
-  },
-  {
-    container: [
-      {
-        multiply: "10 x 1",
-        answer: "",
-      },
-      {
-        multiply: "10 x 2",
-        answer: "",
-      },
-      {
-        multiply: "10 x 3",
-        answer: "",
-      },
-      {
-        multiply: "10 x 4",
-        answer: "",
-      },
-      {
-        multiply: "10 x 5",
-        answer: "",
-      },
-      {
-        multiply: "10 x 6",
-        answer: "",
-      },
-      {
-        multiply: "10 x 7",
-        answer: "",
-      },
-      {
-        multiply: "10 x 8",
-        answer: "",
-      },
-      {
-        multiply: "10 x 9",
-        answer: "",
-      },
-      {
-        multiply: "10 x 10",
-        answer: "",
-      },
-    ],
+const multiplication = [];
+
+for (let i = 2; i <= 10; i++) {
+  const container = { container: [] };
+  for (let j = 1; j <= 10; j++) {
+    container.container.push({
+      multiply: `${i} x ${j}`,
+      answer: String(i * j), // Calculate and assign answer as string
+    });
   }
-];
+  multiplication.push(container);
+}
 
 const gridContainer = document.querySelector("#grid-container");
 
 multiplication.forEach((containers) => {
-
   const card = document.createElement("div");
-  card.classList.add("card")
+  card.classList.add("card");
   gridContainer.appendChild(card);
 
   containers.container.forEach((item) => {
-
     const row = document.createElement("div");
-    row.classList.add("row-wrapper")
+    row.classList.add("row-wrapper");
     const number = document.createElement("span");
     number.textContent = item.multiply;
     const equal = document.createElement("span");
@@ -420,10 +32,30 @@ multiplication.forEach((containers) => {
     card.appendChild(row);
   });
 });
+document.getElementById("checkAnswers").addEventListener("click", () => {
+  const allInputs = document.querySelectorAll("#grid-container input");
 
-const CheckButton = document.createElement("button")
-CheckButton.textContent = "Check answer"
-const resetButton = document.createElement("button")
-resetButton.textContent = "Reset"
-gridContainer.append(CheckButton, resetButton)
+  let inputIndex = 0;
+  multiplication.forEach((table) => {
+    table.container.forEach((item) => {
+      const currentInput = allInputs[inputIndex];
+      const trimmedValue = currentInput.value.trim();
+      if (trimmedValue === item.answer) {
+        currentInput.classList.add("correct-answer");
+        currentInput.classList.remove("incorrect-answer");
+      } else if (trimmedValue === "" || trimmedValue !== item.answer) {
+        currentInput.classList.add("incorrect-answer");
+        currentInput.classList.remove("correct-answer");
+      }
+      inputIndex++;
+    });
+  });
+});
 
+document.querySelector("#reset").addEventListener("click", () => {
+  const allInputs = document.querySelectorAll("#grid-container input");
+  allInputs.forEach((input) => {
+    input.value = "",
+    input.classList.remove("correct-answer", "incorrect-answer");
+  });
+});

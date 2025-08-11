@@ -1,0 +1,17 @@
+:root {
+  --padding: 5px;
+  --line-break: 1rem;
+  --margin-top: 1rem;
+  --margin-right: 5px;
+  --margin-left: 5px;
+}
+
+.line-break {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.wc-icon-item {
+  margin-bottom: 4px;
+}
