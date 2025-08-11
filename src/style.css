@@ -1,17 +1,5 @@
 @import "/src/css/imports.css";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --padding: 10px;
-  --border: 1px solid lightgrey;
-  --border-radius: 5px;
-}
-
 body {
   max-width: 1000px;
   margin: 0 auto;
@@ -26,19 +14,19 @@ h1 {
 
 #grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 123px);
+  grid-template-columns: repeat(auto-fit, 130px);
   justify-content: center;
   gap: 10px;
 }
 
 .card {
-  padding: var(--padding);
+  padding: 8px 1px 6px 8px;
   border: var(--border);
   border-radius: var(--border-radius);
 }
 
 input {
-  width: 30px;
+  width: 38px;
   font-family: "Walter Turncoat";
   font-size: 1rem;
   padding-left: 3px;
