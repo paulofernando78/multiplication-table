@@ -1,6 +1,6 @@
 const multiplication = [];
 
-for (let i = 2; i <= 10; i++) {
+for (let i = 2; i <= 12; i++) {
   const container = { container: [] };
   for (let j = 1; j <= 10; j++) {
     container.container.push({
@@ -11,29 +11,39 @@ for (let i = 2; i <= 10; i++) {
   multiplication.push(container);
 }
 
-const gridContainer = document.querySelector("#grid-container");
+const multiplicationContainer = document.querySelector(
+  "#multiplication-container"
+);
 
 multiplication.forEach((containers) => {
   const card = document.createElement("div");
   card.classList.add("card");
-  gridContainer.appendChild(card);
+  multiplicationContainer.appendChild(card);
 
   containers.container.forEach((item) => {
     const row = document.createElement("div");
     row.classList.add("row-wrapper");
+
     const number = document.createElement("span");
     number.textContent = item.multiply;
+    number.classList.add("number");
+
     const equal = document.createElement("span");
     equal.textContent = "=";
+
     const input = document.createElement("input");
     input.type = "text";
+    input.setAttribute("arial-label", `Answer for ${item.multiply}`);
+
     row.append(number, equal, input);
 
     card.appendChild(row);
   });
 });
 document.getElementById("checkAnswers").addEventListener("click", () => {
-  const allInputs = document.querySelectorAll("#grid-container input");
+  const allInputs = document.querySelectorAll(
+    "#multiplication-container input"
+  );
 
   let inputIndex = 0;
   multiplication.forEach((table) => {
@@ -53,9 +63,14 @@ document.getElementById("checkAnswers").addEventListener("click", () => {
 });
 
 document.querySelector("#reset").addEventListener("click", () => {
-  const allInputs = document.querySelectorAll("#grid-container input");
+  const allInputs = document.querySelectorAll(
+    "#multiplication-container input"
+  );
   allInputs.forEach((input) => {
-    input.value = "",
-    input.classList.remove("correct-answer", "incorrect-answer");
+    (input.value = ""),
+      input.classList.remove("correct-answer", "incorrect-answer");
   });
+  if (allInputs.length > 0) {
+    allInputs[0].focus();
+  }
 });
