@@ -7,21 +7,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Slackey&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/main.css" />
     <script type="module" src="/src/main.js" defer></script>
-    <title>Multiplication Table</title>
+    <title>School years tips and quizzes</title>
   </head>
   <body class="line-break">
-    <h1 class="container">Multiplication Table</h1>
-    <p>How to learn multiplication fast.</p>
-    <p>Fill in the blanks with the correct number.</p>
-    <div class="buttonWrapper">
-      <button id="checkAnswers">Check answers</button>
-      <button id="reset">Reset</button>
-    </div>
-    <div id="multiplication-container"></div>
+    <main class="line-break">
+      <wc-header></wc-header>
+      <wc-nav-bar></wc-nav-bar>
+      <h1 class="container">Dicas e Atividades Escolares</h1>
+
+      <section class="line-break card">
+        <h2>Bem-vindo!</h2>
+        <p>
+          Aqui você encontra atividades online e funcionais para praticar as
+          matérias essenciais:
+          <strong>Português</strong>, <strong>Matemática</strong>,
+          <strong>História</strong>, <strong>Geografia</strong>,
+          <strong>Química</strong>, <strong>Biologia</strong> e
+          <strong>Inglês</strong>.
+        </p>
+        <ul>
+          <li><b>•</b> Exercícios rápidos e interativos</li>
+          <li><b>•</b> Explicações simples e objetivas</li>
+          <li><b>•</b> Funciona no celular, tablet e computador</li>
+        </ul>
+      </section>
+    </main>
+    <wc-footer></wc-footer>
   </body>
 </html>

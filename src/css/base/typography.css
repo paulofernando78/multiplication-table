@@ -20,7 +20,8 @@ h4 {
 
 p,
 input,
-textarea
+textarea,
+li
 {
   line-height: 1.4;
 }

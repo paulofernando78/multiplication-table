@@ -1,6 +1,7 @@
+@import "/src/css/index.css";
+
 /* Base */
 @import "/src/css/base/reset.css";
-@import "/src/css/base/font-face.css";
 @import "/src/css/base/typography.css";
 
 /* Theme */
@@ -10,3 +11,10 @@
 @import "/src/css/ultilities/borders.css";
 @import "/src/css/ultilities/spacing.css";
 @import "/src/css/ultilities/text.css";
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+}
