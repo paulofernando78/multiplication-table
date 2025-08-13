@@ -4,10 +4,6 @@
   gap: 8px;
 }
 
-p {
-  font-size: 1.2rem;
-}
-
 .card {
   padding: 8px 8px 7px 8px;
   border: var(--border);

@@ -21,14 +21,14 @@ class NavBar extends HTMLElement {
       }
     </style>
     <ul>
-      <li><a href="/src/materia/index.html">Início</a></li>
-      <li><a href="/src/materia/portugues.html">Português</a></li>
-      <li><a href="/src/materia/matematica.html">Matemática</a></li>
-      <li><a href="/src/materia/historia.html">História</a></li>
-      <li><a href="/src/materia/geografia.html">Geografia</a></li>
-      <li><a href="/src/materia/quimica.html">Química</a></li>
-      <li><a href="/src/materia/biologia.html">Biologia</a></li>
-      <li><a href="/src/materia/biologia.html">Inglês</a></li>
+      <li><a href="/">Início</a></li>
+      <li><a href="/materia/portugues.html">Português</a></li>
+      <li><a href="/materia/matematica.html">Matemática</a></li>
+      <li><a href="/materia/historia.html">História</a></li>
+      <li><a href="/materia/geografia.html">Geografia</a></li>
+      <li><a href="/materia/quimica.html">Química</a></li>
+      <li><a href="/materia/biologia.html">Biologia</a></li>
+      <li><a href="/materia/biologia.html">Inglês</a></li>
     </ul>
   `;
   }
