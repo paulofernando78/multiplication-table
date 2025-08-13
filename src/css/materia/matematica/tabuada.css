@@ -1,0 +1,53 @@
+#multiplication-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.card {
+  padding: 8px 8px 7px 8px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--slate-1);
+}
+
+.row-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+.number {
+  width: max-content;
+}
+
+input {
+  width: 38px;
+  font-family: "Walter Turncoat";
+  font-size: 1rem;
+  padding-left: 3px;
+  margin-bottom: 2px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px;
+}
+
+.correct-answer {
+  border-radius: var(--border-radius);
+  border: 2px solid var(--green-6);
+}
+
+.incorrect-answer {
+  border-radius: var(--border-radius);
+  border: 2px solid var(--red-4);
+}

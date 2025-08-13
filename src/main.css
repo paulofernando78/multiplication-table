@@ -1,20 +1,20 @@
 @import "/src/css/index.css";
+@import "/src/css/imports.css";
+@import "/src/css/materia-imports.css";
 
-/* Base */
-@import "/src/css/base/reset.css";
-@import "/src/css/base/typography.css";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Butcherman&family=Chewy&family=Londrina+Shadow&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Slackey&display=swap');
 
-/* Theme */
-@import "/src/css/theme/colors.css";
-
-/* Ultilities */
-@import "/src/css/ultilities/borders.css";
-@import "/src/css/ultilities/spacing.css";
-@import "/src/css/ultilities/text.css";
 
 body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 5px;
   font-family: "Montserrat", sans-serif;
+}
+
+wc-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

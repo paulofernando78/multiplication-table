@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
       small {
         display: block;
         text-align: center;
-        margin-top: 15px
+        margin-block: 10px
       }
     `
     this.shadowRoot.appendChild(css)

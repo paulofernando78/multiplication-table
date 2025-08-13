@@ -1,4 +1,5 @@
-const multiplication = [];
+document.addEventListener("DOMContentLoaded", () => {
+  const multiplication = [];
 
 for (let i = 2; i <= 12; i++) {
   const container = {
@@ -86,3 +87,5 @@ document.querySelector("#reset").addEventListener("click", () => {
     allInputs[0].focus();
   }
 });
+})
+

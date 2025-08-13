@@ -1,17 +1,41 @@
+import cssImportsPath from "/src/css/imports.css?inline";
+
 class Header extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
 
-    const header = document.createElement("header");
-    header.style.backgroundColor = "black";
-    header.style.color = "white";
-    header.style.padding = "10px";
-    header.style.borderRadius = "var(--border-radius)"
-    header.textContent = "Header";
+    /*html*/
+    this.shadowRoot.innerHTML = `
+      <style>
+        ${cssImportsPath}
+        header {
+          padding: 5px 0 0 0;
+        }
 
-    this.shadowRoot.append(header);
-  }
+        wc-nav-bar {
+          display: none
+        }
+
+        wc-nav-bar.show {
+          display: block
+        }
+      </style>
+      <header>
+        <wc-button id="button" label="Menu"></wc-button>
+        <wc-nav-bar id="nav-bar"></wc-nav-bar>
+      </header>
+      `;
+
+      const button = this.shadowRoot.querySelector("#button")
+      const navBar = this.shadowRoot.querySelector("#nav-bar")
+
+      button.addEventListener("click", () => {
+        navBar.classList.toggle("show")
+      })
+    }
+
+    
 }
 
 export default Header;
