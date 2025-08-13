@@ -12,6 +12,11 @@ class Header extends HTMLElement {
         header {
           padding: 5px 0 0 0;
         }
+        
+        .flex {
+          display: flex;
+          justify-content: space-between
+        }
 
         wc-nav-bar {
           display: none
@@ -22,9 +27,9 @@ class Header extends HTMLElement {
         }
       </style>
       <header>
-        <div>
-        <wc-button id="button" label="Menu"></wc-button>
-        <wc-button id="button" label="escuro"></wc-button>
+        <div class="flex">
+          <wc-button id="button" label="Menu"></wc-button>
+          <wc-button id="button" label="escuro"></wc-button>
         </div>
         <wc-nav-bar id="nav-bar"></wc-nav-bar>
       </header>

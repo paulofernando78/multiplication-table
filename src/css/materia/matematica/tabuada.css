@@ -5,11 +5,12 @@
 }
 
 .card-label {
-  padding: 8px 8px 7px 8px;
+  padding: var(--padding);
   border: var(--border);
   border-radius: 5px 5px 0 0;
   background-color: var(--slate-3);
   font-family: "Chewy";
+  text-align: center;
 }
 
 .card {
