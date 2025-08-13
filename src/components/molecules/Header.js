@@ -22,7 +22,10 @@ class Header extends HTMLElement {
         }
       </style>
       <header>
+        <div>
         <wc-button id="button" label="Menu"></wc-button>
+        <wc-button id="button" label="escuro"></wc-button>
+        </div>
         <wc-nav-bar id="nav-bar"></wc-nav-bar>
       </header>
       `;
