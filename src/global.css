@@ -2,9 +2,6 @@
 @import "/src/css/imports.css";
 @import "/src/css/materia-imports.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Butcherman&family=Chewy&family=Londrina+Shadow&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Slackey&display=swap');
-
-
 body {
   max-width: 1000px;
   margin: 0 auto;
