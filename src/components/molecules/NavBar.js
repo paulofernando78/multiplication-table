@@ -5,13 +5,16 @@ class NavBar extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
 
+    const cssImports = document.createElement("style");
+    cssImports.textContent = cssImportsPath;
+
     const navBar = document.createElement("nav");
     /*html*/
     this.shadowRoot.innerHTML = `
     <style>
       ${cssImportsPath}
       ul {
-        margin-top: 20px;
+        margin-top: 12px;
         list-style: none;
       }
 

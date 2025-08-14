@@ -4,14 +4,18 @@ class Button extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
+
+    const cssImports = document.createElement("style");
+    cssImports.textContent = cssImportsPath;
   }
 
   connectedCallback() {
-    const label = this.getAttribute("label")
+    const label = this.getAttribute("label");
 
     /*html*/
     this.shadowRoot.innerHTML = `
         <style>
+          ${cssImportsPath}
           button {
             font-family: "Press Start 2P", system-ui;
           }

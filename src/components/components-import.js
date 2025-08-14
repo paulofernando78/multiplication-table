@@ -1,4 +1,5 @@
 // Atoms
+import Board from "./atoms/Board";
 import Button from "./atoms/Button";
 import Footer from "./atoms/Footer";
 
@@ -9,6 +10,7 @@ import NavBar from "./molecules/NavBar";
 // Organisms
 
 // Atoms
+customElements.define("wc-board", Board)
 customElements.define("wc-button", Button)
 customElements.define("wc-footer", Footer)
 

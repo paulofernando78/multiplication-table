@@ -5,6 +5,9 @@ class Header extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
 
+    const cssImports = document.createElement("style");
+    cssImports.textContent = cssImportsPath;
+
     /*html*/
     this.shadowRoot.innerHTML = `
       <style>
@@ -35,15 +38,13 @@ class Header extends HTMLElement {
       </header>
       `;
 
-      const button = this.shadowRoot.querySelector("#button")
-      const navBar = this.shadowRoot.querySelector("#nav-bar")
+    const button = this.shadowRoot.querySelector("#button");
+    const navBar = this.shadowRoot.querySelector("#nav-bar");
 
-      button.addEventListener("click", () => {
-        navBar.classList.toggle("show")
-      })
-    }
-
-    
+    button.addEventListener("click", () => {
+      navBar.classList.toggle("show");
+    });
+  }
 }
 
 export default Header;
