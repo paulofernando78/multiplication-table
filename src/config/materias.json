@@ -1,9 +1,9 @@
 {
   "início": "index.html",
-  "portugues": "/src/materia/portugues",
-  "matematica": "/src/materia/matematica",
-  "historia": "/src/materia/historia",
-  "geografia": "/src/materia/geografia",
-  "quimica": "/src/materia/quimica",
-  "ingles": "/src/materia/ingles"
+  "portugues": "/src/materia/portugues.html",
+  "matematica": "/src/materia/matematica.html",
+  "historia": "/src/materia/historia.html",
+  "geografia": "/src/materia/geografia.html",
+  "quimica": "/src/materia/quimica.html",
+  "ingles": "/src/materia/ingles.html"
 }
