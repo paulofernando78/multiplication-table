@@ -2,6 +2,7 @@
 import Board from "./atoms/Board";
 import Button from "./atoms/Button";
 import Footer from "./atoms/Footer";
+import Icon from "./atoms/Icon";
 
 // Molecules
 import Header from "./molecules/Header";
@@ -14,6 +15,7 @@ import MateriaSublinks from "./molecules/MateriaSublinks";
 customElements.define("wc-board", Board)
 customElements.define("wc-button", Button)
 customElements.define("wc-footer", Footer)
+customElements.define("wc-icon", Icon)
 
 // Molecules
 customElements.define("wc-header", Header)
