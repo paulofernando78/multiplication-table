@@ -1,4 +1,5 @@
 import cssImportsPath from "/src/css/imports.css?inline";
+import materias from "/src/config/materias.json";
 
 class NavBar extends HTMLElement {
   constructor() {
@@ -23,17 +24,22 @@ class NavBar extends HTMLElement {
         font-family: "Slackey";
       }
     </style>
-    <ul>
-      <li><a href="/">Início</a></li>
-      <li><a href="/src/materia/portugues.html">Português</a></li>
-      <li><a href="/src/materia/matematica.html">Matemática</a></li>
-      <li><a href="/src/materia/historia.html">História</a></li>
-      <li><a href="/src/materia/geografia.html">Geografia</a></li>
-      <li><a href="/src/materia/quimica.html">Química</a></li>
-      <li><a href="/src/materia/biologia.html">Biologia</a></li>
-      <li><a href="/src/materia/biologia.html">Inglês</a></li>
-    </ul>
+    <nav>
+    <ul id="nav-list"></ul>
+    </nav>
   `;
+  }
+
+  connectedCallback() {
+    const ul = this.shadowRoot.getElementById("nav-list");
+    Object.entries(materias).forEach(([nome, path]) => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = path;
+      a.textContent = nome.charAt(0).toUpperCase() + nome.slice(1); // Capitaliza
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
   }
 }
 
