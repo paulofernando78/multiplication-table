@@ -6,6 +6,7 @@ import Footer from "./atoms/Footer";
 // Molecules
 import Header from "./molecules/Header";
 import NavBar from "./molecules/NavBar";
+import MateriaSublinks from "./molecules/MateriaSublinks";
 
 // Organisms
 
@@ -17,5 +18,6 @@ customElements.define("wc-footer", Footer)
 // Molecules
 customElements.define("wc-header", Header)
 customElements.define("wc-nav-bar", NavBar)
+customElements.define("wc-materia-sublinks", MateriaSublinks)
 
 // Organisms

@@ -1,0 +1,26 @@
+{
+  "portugues": {
+    "substantivo": "/src/materia/portugues/substativo.html",
+    "verbo": "/src/materia/portugues/verbo.html",
+    "adjetivo": "/src/materia/portugues/adjetivo.html",
+    "adverbio": "/src/materia/portugues/adverbio.html"
+  },
+  "matematica": {
+    "multiplicacao": "matematica/multiplicacao.html"
+  },
+  "historia": {
+    "brasil-colônia": "/src/historia/brasil-colonia.html"
+  },
+  "geografia": {
+    "...": ""
+  },
+  "biologia": {
+    "...": ""
+  },
+  "quimica": {
+    "...": ""
+  },
+  "ingles": {
+    "...": ""
+  }
+}
