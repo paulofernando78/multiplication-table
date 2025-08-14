@@ -6,7 +6,7 @@
     "adverbio": "/src/materia/portugues/adverbio.html"
   },
   "matematica": {
-    "multiplicacao": "matematica/multiplicacao.html"
+    "multiplicacao": "/src/materia/matematica/multiplicacao.html"
   },
   "historia": {
     "brasil-colônia": "/src/historia/brasil-colonia.html"

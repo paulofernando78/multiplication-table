@@ -1,14 +1,25 @@
 import { defineConfig } from "vite";
 import path from "path";
 import materias from "./src/config/materias.json";
+import materiaSublinks from "./src/config/materia-sublinks.json";
 
 // Converte para caminhos absolutos
-const input = Object.fromEntries(
+const mainInputs = Object.fromEntries(
   Object.entries(materias).map(([name, filePath]) => [
     name,
     path.resolve(__dirname, filePath),
   ])
 );
+
+const subInputs = Object.entries(materiaSublinks).flatMap(
+  ([materia, links]) =>
+    Object.entries(links).map(([name, filePath]) => [
+      `${materia}-${name}`,
+      path.resolve(__dirname, filePath),
+    ])
+);
+
+const input = Object.fromEntries([...mainInputs, ...subInputs]);
 
 export default defineConfig({
   build: {
