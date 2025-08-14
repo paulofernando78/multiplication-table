@@ -36,7 +36,7 @@ class NavBar extends HTMLElement {
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.href = path;
-      a.textContent = nome.charAt(0).toUpperCase() + nome.slice(1); // Capitaliza
+      a.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
       li.appendChild(a);
       ul.appendChild(li);
     });
