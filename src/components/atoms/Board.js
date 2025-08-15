@@ -10,8 +10,9 @@ class Board extends HTMLElement {
     const cssImports = document.createElement("style");
     cssImports.textContent = cssImportsPath;
 
-    const title = this.getAttribute("title")
-    const subTitle = this.getAttribute("subtitle")
+    const titulo = this.getAttribute("titulo")
+    const subTitulo = this.getAttribute("subtitulo")
+    const descricao = this.getAttribute("descricao")
 
     /*html*/
     this.shadowRoot.innerHTML = `
@@ -19,7 +20,7 @@ class Board extends HTMLElement {
       ${cssImportsPath}
       div {
         width: 100%;
-        height: 200px;
+        height: 164px;
         padding: 22px 15px 15px 15px;
         font-family: "Rock Salt", cursive;
         color: white;
@@ -31,10 +32,16 @@ class Board extends HTMLElement {
       h1 {
         margin-bottom: 20px
       }
+      
+      h2 {
+        margin-bottom: 20px
+      }
+      
     </style>
     <div>
-      <h1>${title}</h1>
-      ${subTitle ? `<h2>${subTitle}</h2>` : ""}
+      <h1>${titulo}</h1>
+      ${subTitulo ? `<h2>${subTitulo}</h2>` : ""}
+      ${descricao ? `<h3>${descricao}</h3>` : ""}
     </div>
     `;
   }
