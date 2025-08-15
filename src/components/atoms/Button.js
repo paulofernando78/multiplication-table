@@ -1,4 +1,5 @@
 import cssImportsPath from "/src/css/imports.css?inline";
+import * as icons from "/src/assets/images/svg-imports.js"
 
 class Button extends HTMLElement {
   constructor() {
@@ -11,6 +12,9 @@ class Button extends HTMLElement {
 
   connectedCallback() {
     const label = this.getAttribute("label");
+    const icon = this.getAttribute("icon")
+
+    const frontContent = icon && icons[icon] ? icons[icon] : label
 
     /*html*/
     this.shadowRoot.innerHTML = `
@@ -99,7 +103,7 @@ class Button extends HTMLElement {
         <button class="pushable">
           <span class="shadow"></span>
           <span class="edge"></span>
-          <span class="front">${label}</span>
+          <span class="front">${frontContent}</span>
         </button>
         `;
   }

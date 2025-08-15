@@ -1,7 +1,19 @@
 @import "/src/css/index.css";
 @import "/src/css/imports.css";
 
+:root.light {
+  --background: white;
+  --color: black;
+}
+
+:root.dark {
+  --background: black;
+  --color: white;
+}
+
 body {
+  background: var(--background);
+  color: var(--color);
   max-width: 1000px;
   margin: 0 auto;
   padding: 5px;
@@ -14,3 +26,5 @@ wc-footer {
   left: 0;
   width: 100%;
 }
+
+

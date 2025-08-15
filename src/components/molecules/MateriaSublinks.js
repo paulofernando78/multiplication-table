@@ -21,6 +21,11 @@ class MateriaSublinks extends HTMLElement {
       li a {
         text-decoration: none;
       }
+
+      .bullet::before {
+        content: "• ";
+        font-weight: bold
+      }
     </style>
     <ul id="materia-sublinks"></ul>
   `;
@@ -35,6 +40,7 @@ class MateriaSublinks extends HTMLElement {
     Object.entries(links).forEach(([nome, path]) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
+      a.classList.add("bullet")
       a.href = path;
       a.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
       li.appendChild(a);
