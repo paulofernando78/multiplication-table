@@ -1,5 +1,8 @@
 {
   "matematica": {
     "multiplicação": "/src/materia/matematica/multiplicacao.html"
+  },
+  "quimica": {
+    "tabela periódica": "/src/materia/quimica/tabela-periodica.html"
   }
 }
