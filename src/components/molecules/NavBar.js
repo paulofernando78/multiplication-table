@@ -1,5 +1,5 @@
 import cssImportsPath from "/src/css/imports.css?inline";
-import materias from "/src/config/materias.json";
+import materias from "/src/config/materia-links.json";
 
 class NavBar extends HTMLElement {
   constructor() {
@@ -15,7 +15,7 @@ class NavBar extends HTMLElement {
     <style>
       ${cssImportsPath}
       ul {
-        margin-top: 12px;
+        margin: 12px 0 20px 0;
         list-style: none;
       }
 

@@ -12,6 +12,7 @@ class Header extends HTMLElement {
         ${cssImportsPath}
         header {
           padding: 5px 0 0 0;
+          margin-bottom: 2px
         }
         
         .flex {

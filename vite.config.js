@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import path from "path";
-import materias from "./src/config/materias.json";
+import materias from "./src/config/materia-links.json";
 import materiaSublinks from "./src/config/materia-sublinks.json";
 
 // mainInputs como array de pares
