@@ -1,5 +1,5 @@
-const width = "30px"
-const height = "30px"
+const width = "25px"
+const height = "25px"
 
 export const apple = `<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="${width}" height="${height}" viewBox="0 0 100 100">
 <g id="Ð¡Ð»Ð¾Ð¹_2">
