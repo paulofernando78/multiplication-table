@@ -1,10 +1,10 @@
 import cssImportsPath from "/src/css/imports.css?inline";
-import { apple, light, dark } from "/src/assets/images/svg-imports.js";
+import { apple, banana, orange } from "/src/assets/images/svg-imports.js";
 
 const icons = {
   apple,
-  light,
-  dark
+  banana,
+  orange
 }
 
 class Icon extends HTMLElement {
@@ -19,10 +19,9 @@ class Icon extends HTMLElement {
     const css = document.createElement("style");
     /*css*/
     css.textContent = `
-      svg {
-        vertical-align: middle;
-        position: relative;
-        bottom: 3px
+      span {
+        display: inline-block;
+        // border: 1px solid red
       }
     `;
     this.shadowRoot.appendChild(css)

@@ -3,22 +3,24 @@ import cssImportsPath from "/src/css/imports.css?inline";
 class Card extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: open });
+    this.attachShadow({ mode: "open" });
 
-    const cssImports = document.createElement("style");
-    cssImports.textContent = cssImportsPath;
-
-    const css = document.createElement("style");
-    /*css*/
-    css.textContent = `
-      div {
-        border: "var(--border)"
-      }
+    /*html*/
+    this.shadowRoot.innerHTML = `
+    <style>
+        ${cssImportsPath}
+        div {
+          width: max-content;
+          padding: var(--padding);
+          border: var(--border);
+          border-radius: var(--border-radius);
+          box-shadow: var(--box-shadow)
+        }
+      </style>
+      <div>
+        <slot></slot>
+      </div>
     `;
-
-    const card = document.createElement("div");
-
-    this.shadowRoot.appendChild(card);
   }
 }
 

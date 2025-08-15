@@ -5,7 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/global.css" />
-    <link rel="stylesheet" href="/src/css/materia/matematica/tabuada.css" />
+    <link
+      rel="stylesheet"
+      href="/src/css/materia/matematica/multiplicacao.css"
+    />
     <script type="module" src="/src/global.js" defer></script>
     <script
       type="module"
@@ -20,13 +23,41 @@
     <main>
       <wc-board title="Matemática" subtitle="Multiplicação"></wc-board>
       <section class="line-break">
-        <p class="bold">Como multiplicar.</p>
+        <p class="bold">Como multiplicar:</p>
         <wc-card>
-          <p><wc-icon name="apple"></wc-icon><wc-icon name="apple"></wc-icon><wc-icon name="apple"></wc-icon> × 4 ➜ 3 + 3 + 3 + 3 = <wc-icon name="apple"></wc-icon> 12</p>
-          <p>7 × 6 = 42 ➜ 7 + 7 + 7 + 7 + 7 + 7 = 42</p>
-          <p>3 × 4 = 12 ➜ 3 + 3 + 3 + 3 = 12</p>
+          <span class="block">2 x 3</span>
+          <wc-icon name="apple"></wc-icon>
+          <wc-icon name="apple"></wc-icon> × 3
+          <div>
+            <wc-icon name="apple"></wc-icon>
+            <wc-icon name="apple"></wc-icon>
+            <span>+</span>
+            <wc-icon name="apple"></wc-icon>
+            <wc-icon name="apple"></wc-icon>
+            <span>+</span>
+            <wc-icon name="apple"></wc-icon>
+            <wc-icon name="apple"></wc-icon>
+            <span>= 6</span> 
+          </div>
         </wc-card>
-        <p class="bold">Preencha as lacunas com os números.</p>
+
+        <wc-card>
+          <span class="block">3 x 2</span>
+          <wc-icon name="banana"></wc-icon>
+          <wc-icon name="banana"></wc-icon>
+          <wc-icon name="banana"></wc-icon> x 2
+          <div>
+            <wc-icon name="banana"></wc-icon>
+            <wc-icon name="banana"></wc-icon>
+            <wc-icon name="banana"></wc-icon>
+            <span>+</span>
+            <wc-icon name="banana"></wc-icon>
+            <wc-icon name="banana"></wc-icon>
+            <wc-icon name="banana"></wc-icon>
+            <span>= 6</span> 
+          </div>
+        </wc-card>
+        <p class="bold">Preencha as lacunas com os números. reencha as lacunas com os números. reencha as lacunas com os números. reencha as lacunas com os números.</p>
       </section>
       <div class="buttonWrapper">
         <wc-button id="checkAnswers" label="Respostas"></wc-button>
