@@ -16,6 +16,8 @@ class Button extends HTMLElement {
 
     const frontContent = icon && icons[icon] ? icons[icon] : label
 
+    const buttonStyle = icon ? "width: 39px; height: 33px" : "";
+
     /*html*/
     this.shadowRoot.innerHTML = `
         <style>
@@ -35,6 +37,14 @@ class Button extends HTMLElement {
             will-change: transform;
             transform: translateY(-4px);
             transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+          }
+
+          .front svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+
           }
 
           .pushable {
@@ -100,10 +110,10 @@ class Button extends HTMLElement {
             outline: none;
           }
         </style>
-        <button class="pushable">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">${frontContent}</span>
+        <button class="pushable" style="${buttonStyle}">
+          <span class="shadow" style="${buttonStyle}"></span>
+          <span class="edge" style="${buttonStyle}"></span>
+          <span class="front" style="${buttonStyle}">${frontContent}</span>
         </button>
         `;
   }
