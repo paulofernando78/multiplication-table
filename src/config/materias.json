@@ -1,5 +1,5 @@
 {
-  "início": "index.html",
+  "início": "/index.html",
   "portugues": "/src/materia/portugues.html",
   "matematica": "/src/materia/matematica.html",
   "historia": "/src/materia/historia.html",
