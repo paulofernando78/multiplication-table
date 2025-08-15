@@ -11,6 +11,7 @@
   background-color: var(--slate-3);
   font-family: "Chewy";
   text-align: center;
+  color: black
 }
 
 .card {
@@ -31,6 +32,7 @@
 
 .number {
   width: max-content;
+  color: black
 }
 
 input {
