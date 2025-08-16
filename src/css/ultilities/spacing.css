@@ -4,6 +4,11 @@
   --margin-top: 1rem;
   --margin-right: 5px;
   --margin-left: 5px;
+  --margin-bottom: 1rem
+}
+
+.margin-bottom {
+  margin-bottom: var(--margin-bottom);
 }
 
 .line-break {

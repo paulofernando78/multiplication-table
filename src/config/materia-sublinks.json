@@ -1,19 +1,22 @@
 {
   "portugues": {
-    "artigo": "/src/materia/portugues/artigo.html",
-    "substantivo": "/src/materia/portugues/substantivo.html",
-    "verbo": "/src/materia/portugues/verbo.html",
-    "adjetivo": "/src/materia/portugues/adjetivo.html",
-    "advérbio": "/src/materia/portugues/adverbio.html",
-    "preposição": "/src/materia/portugues/preposicao.html",
-    "numeral": "/src/materia/portugues/numeral.html",
-    "interjeicão": "/src/materia/portugues/interjeicao.html",
-    "conjuncção": "/src/materia/portugues/conjuncao.html"
+    "Artigo": "/src/materia/portugues/artigo.html",
+    "Substantivo": "/src/materia/portugues/substantivo.html",
+    "Verbo": "/src/materia/portugues/verbo.html",
+    "Adjetivo": "/src/materia/portugues/adjetivo.html",
+    "Advérbio": "/src/materia/portugues/adverbio.html",
+    "Preposição": "/src/materia/portugues/preposicao.html",
+    "Numeral": "/src/materia/portugues/numeral.html",
+    "Interjeicão": "/src/materia/portugues/interjeicao.html",
+    "Conjuncção": "/src/materia/portugues/conjuncao.html"
   },
   "matematica": {
-    "multiplicação": "/src/materia/matematica/multiplicacao.html"
+    "Multiplicação": "/src/materia/matematica/multiplicacao.html"
+  },
+  "historia": {
+    "História do Brasil": "/src/materia/historia/colonizacao.html"
   },
   "quimica": {
-    "tabela periódica": "/src/materia/quimica/tabela-periodica.html"
+    "Tabela Periódica": "/src/materia/quimica/tabela-periodica.html"
   }
 }
