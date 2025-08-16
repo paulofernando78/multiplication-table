@@ -1,9 +1,14 @@
 @import "/src/css/index.css";
 @import "/src/css/imports.css";
 
+:root {
+  --margin-bottom: 1rem
+}
+
 :root.light {
   --background: white;
   --color: black;
+  --margin-bottom: 1rem
 }
 
 :root.dark {
@@ -18,6 +23,14 @@ body {
   margin: 0 auto;
   padding: 5px;
   font-family: "Montserrat", sans-serif;
+}
+
+section {
+  margin-bottom: var(--margin-bottom);
+}
+
+.margin-bottom {
+  margin-bottom: var(--margin-bottom);
 }
 
 wc-footer {

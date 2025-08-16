@@ -30,7 +30,7 @@ class Header extends HTMLElement {
       </style>
       <header>
         <div class="flex">
-          <wc-button id="button" label="Menu"></wc-button>
+          <wc-button id="button" icon="menu"></wc-button>
           <wc-button id="darkButton" icon="lightOff"></wc-button>
         </div>
         <wc-nav-bar id="nav-bar"></wc-nav-bar>
