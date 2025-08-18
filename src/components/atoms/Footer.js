@@ -6,10 +6,18 @@ class Footer extends HTMLElement {
     const css = document.createElement("style");
     /*css*/
     css.textContent = `
+      div {
+        background-color: white
+      }
+    
       small {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-block: 8px;
         display: block;
         text-align: center;
-        margin-block: 10px
+        border: 1px solid lightgray;
+        border-radius: var(--border-radius)
       }
     `
     this.shadowRoot.appendChild(css)
@@ -17,8 +25,9 @@ class Footer extends HTMLElement {
     const footer = document.createElement("footer");
     /*html*/
     footer.innerHTML = `
-      <hr />
+      <div>
       <small>&copy; 2025 Atividades Online. Todos os direitos reservados.</small>
+      </div>
     `;
     
     this.shadowRoot.appendChild(footer);

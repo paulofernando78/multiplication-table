@@ -10,12 +10,14 @@ const mainInputs = Object.entries(materias).map(([name, filePath]) => [
 ]);
 
 // subInputs também como array de pares
-const subInputs = Object.entries(materiaSublinks).flatMap(([materia, links]) =>
-  Object.entries(links).map(([name, filePath]) => [
-    `${materia}-${name}`,
-    path.resolve(__dirname, filePath),
-  ])
-);
+const subInputs = Object.entries(materiaSublinks).flatMap(([materia, linksBySub]) =>
+  Object.entries(linksBySub).flatMap(([subMateria, links]) =>
+    Object.entries(links).map(([name, filePath]) => {
+      const safeKey = `${materia}-${subMateria}-${name}`.replace(/\s+/g, "_").replace(/:/g, "")
+      return [safeKey, path.resolve(__dirname, filePath)]
+    })
+  )
+)
 
 // junta os dois arrays e só depois converte em objeto
 const input = Object.fromEntries([...mainInputs, ...subInputs]);

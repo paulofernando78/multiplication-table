@@ -16,7 +16,7 @@ class Button extends HTMLElement {
 
     const frontContent = icon && icons[icon] ? icons[icon] : label
 
-    const buttonStyle = icon ? "width: 39px; height: 33.91px" : "";
+    const buttonStyle = icon ? "width: 40px; height: 33.91px" : "";
 
     /*html*/
     this.shadowRoot.innerHTML = `

@@ -37,14 +37,46 @@ class MateriaSublinks extends HTMLElement {
 
     const links = materiaSublinks[materia];
 
-    Object.entries(links).forEach(([nome, path]) => {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.classList.add("bullet")
-      a.href = path;
-      a.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
-      li.appendChild(a);
-      ul.appendChild(li);
+    if (!this.subIndex) this.subIndex = 0
+
+    Object.entries(links).forEach(([nome, val]) => {
+      if (typeof val === "string") {
+        // Caso simples: link direto
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.classList.add("bullet");
+        a.href = val;
+        a.textContent = nome;
+        li.appendChild(a);
+        ul.appendChild(li);
+      } else if (val && typeof val === "object") {
+        // Caso com submatéria
+        const liSub = document.createElement("li");
+        if (this.subIndex > 0) {
+          liSub.style.marginTop = "16px"
+        }
+        this.subIndex++;
+        
+        const span = document.createElement("span");
+        span.textContent = nome;
+        span.style.fontWeight = "bold"
+        liSub.appendChild(span)
+
+        const subUl = document.createElement("ul");
+
+        Object.entries(val).forEach(([subNome, subPath]) => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.classList.add("bullet");
+          a.href = subPath;
+          a.textContent = subNome;
+          li.appendChild(a);
+          subUl.appendChild(li);
+        });
+
+        liSub.appendChild(subUl);
+        ul.appendChild(liSub);
+      }
     });
   }
 }

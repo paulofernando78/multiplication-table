@@ -13,9 +13,9 @@
 }
 
 body {
+  max-width: 1000px;
   background: var(--background);
   color: var(--color);
-  max-width: 1000px;
   margin: 0 auto;
   padding: 5px;
   font-family: "Montserrat", sans-serif;
