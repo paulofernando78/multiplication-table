@@ -10,17 +10,6 @@
       "Numeral": "/src/materia/portugues/numeral.html",
       "Interjeicão": "/src/materia/portugues/interjeicao.html",
       "Conjuncção": "/src/materia/portugues/conjuncao.html"
-    },
-    "Palavras": {
-      "Artigo": "/src/materia/portugues/artigo.html",
-      "Substantivo": "/src/materia/portugues/substantivo.html",
-      "Verbo": "/src/materia/portugues/verbo.html",
-      "Adjetivo": "/src/materia/portugues/adjetivo.html",
-      "Advérbio": "/src/materia/portugues/adverbio.html",
-      "Preposição": "/src/materia/portugues/preposicao.html",
-      "Numeral": "/src/materia/portugues/numeral.html",
-      "Interjeicão": "/src/materia/portugues/interjeicao.html",
-      "Conjuncção": "/src/materia/portugues/conjuncao.html"
     }
   },
   "matematica": {
